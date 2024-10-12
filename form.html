@@ -4,8 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
+    <div class="container">
+        <h1 id="title">Register</h1>
+        <p id="subtitle">Input your informations</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="group-fieldset">
+            <div class="group-div">
+                <label for="name"><strong>Name:</strong></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="group-div">
+                <label for="surname"><strong>Surname:</strong></label>
+                <input type="text" name="surname" id="surname" required>
+            </div>
+        </fieldset>
+
+        <div class="group-div">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="group-div">
+            <label><strong>In which side of application do you develop?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend">Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Full-stack
+            </label>
+        </div>
+
+        <div class="group-div">
+            <label for="seniority"><strong>Seniority:</strong></label>
+            <select id="seniority">
+                <option selected disabled value="">Choose:</option>
+                <option>Junior</option>
+                <option>Full</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="group-fieldset">
+            <div class="group-div">
+                <label><strong>Select the tecnologies you use:</strong></label><br><br>
+                <input type="checkbox" id="tecnology1" name="tecnology1" value="html">
+                <label for="tecnology1">HTML</label>
+                <input type="checkbox" id="tecnology2" name="tecnology2" value="css">
+                <label for="tecnology1">CSS</label>
+                <input type="checkbox" id="tecnology3" name="tecnology3" value="javascript">
+                <label for="tecnology1">JavaScript</label>
+                <input type="checkbox" id="tecnology4" name="tecnology4" value="php">
+                <label for="tecnology1">PHP</label>
+                <input type="checkbox" id="tecnology5" name="tecnology5" value="c#">
+                <label for="tecnology1">C#</label>
+                <input type="checkbox" id="tecnology6" name="tecnology6" value="python">
+                <label for="tecnology1">Python</label>
+                <input type="checkbox" id="tecnology7" name="tecnology7" value="java">
+                <label for="tecnology1">Java</label>
+            </div>
+        </fieldset>
+
+        <div class="group-div">
+            <br>
+            <label><strong>Share something about you:</strong></label>
+            <textarea name="about" id="about" row="6" style="width: 26em"></textarea>
+        </div>
+
+        <button type="submit" class="button">Finish</button>
+    </form>
+
 </body>
 </html>

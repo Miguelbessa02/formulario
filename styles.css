@@ -1,0 +1,115 @@
+/* Estilos básicos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contêiner para centralizar o conteúdo */
+.container {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+form {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    text-align: left; /* Alinhamento à esquerda para os campos */
+}
+
+/* Estilo para o título e subtítulo */
+#title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.2em;
+}
+
+#subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+/* Estilo para os fieldsets */
+.group-fieldset {
+    border: 2px solid #ccc;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+}
+
+/* Estilo para os elementos dentro dos .group-div */
+.group-div {
+    margin-bottom: 1.5em;
+}
+
+.group-div label {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    display: block;
+    color: #333;
+}
+
+/* Estilo para os inputs de texto e select */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Estilo para os radio buttons e checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.group-div label strong {
+    font-weight: bold;
+}
+
+/* Estilo para o botão */
+button.button {
+    background-color: #59429d;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button.button:hover {
+    background-color: #46337a;
+}
+
+/* Centralizar os checkboxes e radios */
+.group-div input[type="checkbox"], 
+.group-div input[type="radio"] {
+    margin-left: 10px;
+}
+
